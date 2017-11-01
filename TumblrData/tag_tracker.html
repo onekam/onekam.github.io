@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+    	<style type="text/css">
+    		.tag{
+    			background: #e8e8e8;
+    			padding: 2px;
+    			margin: 3px;
+    			white-space: nowrap;
+    			transition: 0.5s;
+    		}
+    		.tag:hover{
+    			background: #fff;
+    			letter-spacing: 2px;
+    		}
+    	</style>
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="script1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    </head>
+
+    <body>
+    	<div class="container-fluid" id="mainstuff">
+	    	<div id="topTags">
+	    		<h2>Top Tags</h2>
+	    		<div id="topTagsContent"></div>
+			</div>
+
+			<div id="linePlot">
+				<h2>Tag Comparison</h2>
+    			<div id="linePlotContent"></div>
+    		</div>
+    	</div>
+
+    	<script>
+    		tags = [["dsflk", 121], ["awpeofj", 324], ["xcvlkj", 12], 
+    				["waeogi", 133], ["alwpeo", 102], ["alskdjf", 204],
+    				["alsdkfj", 38], ["asldfkja", 195], ["swaggg", 99]];
+
+    		tags.sort(
+    				function(a,b){
+    					return b[1] - a[1];
+    				} 
+    		);
+
+    		for (var i = 0; i < tags.length; i++){
+    			var newSpan = document.createElement('span');
+    			newSpan.setAttribute('class', 'tag');
+    			newSpan.innerHTML = (tags[i][0] + ": " + tags[i][1]);
+    			document.getElementById('topTagsContent').appendChild(newSpan);
+    		}
+    	</script>
+
+    	<script>
+
+    		var times = ['2015-10-04 22:23:00', '2015-11-04 22:23:00', '2015-12-04 22:23:00', '2016-01-04 22:23:00']; 
+
+    		var data = [];
+
+	    	data = [
+		    	{
+			  		x: times,
+			  		y: [10, 15, 13, 17],
+			  		name: 'swag',
+			  	// 	marker: {
+			  	// 			color: 'rgb(142, 124, 195)',
+						// },
+			  		type: 'scatter'
+				},		
+				{
+					x: times,
+					y: [16, 5, 11, 9],
+					name: 'hi',
+					type: 'scatter'
+				},
+				{
+					x: times,
+					y: [5, 12, 1, 5],
+					name: 'wowzer',
+					type: 'scatter'
+				},
+				{
+					x: times,
+					y: [0,0,22,14],
+					name: 'swag money',
+					type: 'scatter'
+
+				}
+			];	
+
+			Plotly.newPlot('linePlotContent', data);
+		</script>	
+    </body>
+</html>

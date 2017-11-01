@@ -1,1 +1,237 @@
-Hello World
+<head>
+<title>Morgan Oneka</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fira+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+<style type="text/css">
+                
+                /* removes follow buttons & related */
+                .tmblr-iframe { display:none; }
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    outline: 0;
+                    font-size: 100%;
+                    vertical-align: baseline;
+                    background: transparent;
+                    font-family: "Fira Sans", sans-serif;
+                }
+                body{
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                }
+                .title{
+                    font-size: 72px;
+                    font-family: "Abril Fatface", cursive;
+                }
+                h1{
+                    font-size: 48px;
+                    font-family: "Abril Fatface", cursive;
+                }
+                h2{
+                	font-size: 28px;
+                	font-family: "Abril Fatface", cursive;
+                }
+                .desc{
+                    
+                }
+                .posts{
+                    padding: 0;
+                }
+                .entry{
+                    width: 540px;
+                    margin-top:0;
+                    margin-bottom:0;
+                    padding: 3px;
+                    background: white;
+                    position:relative;
+                    left:50%;
+                    margin-left:calc((540px * 1.5) / -2 - 15px); 
+                    margin-bottom:120px;
+                    margin-top:150px;
+                    border-radius: 4px;
+                    overflow-y: scroll;
+                }
+                .post img{
+                    width: 100%;
+                }
+                .post2, .welcome{
+                    width:100%;
+                    position:relative;
+                    min-height:100vh;
+                    display:flex;
+                }
+                .post2:nth-child(3n+1){
+                    background-color: #D3C8B4;
+                }
+                .post2:nth-child(3n+2){
+                    background-color: #E7E4D5;
+                }
+                .post2:nth-child(3n+3){
+                    background-color: #FFF3DB;
+                }
+                /*.post2:nth-child(5n+4){
+                    background-color: #ff9251;
+                }
+                .post2:nth-child(5n+5){
+                    background-color: #ff5a24;
+                }*/
+                
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
+                #container{
+                    margin-left: 0px;
+                }
+                .welcome{
+                    background: #C84648;
+                    color: #fff;
+                }
+                .basics{
+                     position:relative;
+                    left:50%;
+                    margin-left:calc((540px * 1.5) / -2 - 15px); 
+                    margin-bottom:120px;
+                    margin-top:150px;
+                    border-radius: 4px;
+                }
+                ul, ol, blockquote{
+                    margin-left: 15px;
+                }
+                .notes, .tags{
+                    display:flex;
+                }
+                .tag{
+                    padding-right: 5px;
+                }
+                .extra{
+                    padding-top: 5px;
+                    position: absolute; 
+                    bottom: 0; 
+                    width: 100%; 
+                    height: 50px; 
+                    border-top: 1px solid gray;
+                }
+                .navigation{
+                    font-size: 16px;
+                    height: 40px;
+                    top: 0;
+                    position: absolute;
+                    display:flex;
+                    width: 100%;
+                    padding: 10px;
+                    text-shadow: 2px 2px 4px #000000;
+                }
+                .navigation a{
+                	padding-left: 25px;
+                	padding-right: 25px;
+                }
+                #sticky{
+                    width: 100%;
+                }
+                .navigation form{
+                    /*margin-left: 50px;*/
+                    margin-top: 3px;
+                }
+                #sticky.sticky {
+                    position: fixed;
+                    top: 0;
+                    z-index: 9000000;
+                }
+                i{
+                    padding: 10px;
+                    text-shadow: black 2px 2px 4px;
+                }
+                
+                .sfm input {background-color: #f5f5f5; 
+                    font-size: 8px; 
+                    border: 0px; 
+                    text-transform: uppercase; 
+                    margin-top: 0px; 
+                    color: #999; 
+                    letter-spacing: 1px; 
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    box-shadow: black 2px 2px 4px;
+                }
+                .search{
+                    text-align: right;
+                    width: 300px;   
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    margin-right: 10px;
+                }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<body>
+ </head>
+    <body>   
+    <script>
+    $(document).ready(function(){
+        var $window = $(window),
+        $stickyEl = $('#sticky'),
+        elTop = $stickyEl.offset().top;
+        $window.scroll(function() {
+        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+        });
+    });
+    </script>
+
+    <div id="container">
+    	<div class="welcome" id="about">
+            <div class="basics">
+                <div class="title">Morgan Oneka</div>
+                <div class="desc">I am an aspiring computational biologist currently looking for a PhD Program to call home for the next five years! <br><br>
+
+                </div>
+            </div>
+            
+            <div class="navigation" id="sticky">
+            <center>
+                <a href="#about">
+                    About
+                </a>
+                <a href="#cv">
+                    CV
+                </a>
+                <a href="/ask">
+                    Portfolio
+                </a>
+                <a href="/about">
+                    Contact
+                </a>
+            </center>
+            </div>
+        </div>
+
+
+        <div class="posts">
+
+        	<div class="post2" id="cv"><div class="basics">
+                	<h1>My CV</h1>
+                	<blockquote>
+	                	<div class="desc"><h2>Education</h2>
+	                	STUFF at this PLACEE<br><br>
+	                	<h2>Research</h2></div>
+                	</blockquote>
+            	</div></div>
+
+			<div class="post2"><div class="post">
+        		Hello
+        	</div></div>
+
+        </div>
+
+    </div> <!-- ends CONTAINER -->
+
+</body>
