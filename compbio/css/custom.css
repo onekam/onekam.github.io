@@ -12,3 +12,8 @@
 .jumbotron h1{
 	font-size: 48px;
 }
+
+blockquote{
+	font-size: 12px;
+	font-style: italic;
+}

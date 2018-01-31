@@ -21,9 +21,11 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
-      <li><a href="#">Submenu 1-1</a></li>
-      <li><a href="#">Submenu 1-2</a></li>
-      <li><a href="#">Submenu 1-3</a></li> 
+      <li><a data-toggle="tab" href="#topics-csm">Cellular and Systems Modelling</a></li>
+      <li><a data-toggle="tab" href="#topics-med">Clinical Medicine</a></li> 
+      <li><a data-toggle="tab" href="#topics-htda">High-Throughput Data Analysis</a></li>
+      <li><a data-toggle="tab" href="#topics-img">Image Processing</a></li> 
+      <li><a data-toggle="tab" href="#topics-phy">Phylogenetics</a></li> 
     </ul>
   </li>
     <li><a data-toggle="tab" href="#techniques">Techniques</a></li>
@@ -37,26 +39,69 @@
  
 
 	<div class="tab-content">
+		<!--- HOME -->
 	    <div id="home" class="tab-pane fade in active">
 	      <h3>What is Computational Biology?</h3>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	    </div>
+
+	    <!--- TOPICS -->
+	    <div id="topics-csm" class="tab-pane fade">
+	      <h3>Cellular and Systems Modelling</h3>
+	      <h4>What is Cellular and Systems Modeling?</h4>
+	      <!-- TODO: find sources for this -->
+	      <p>A system is a collection of items that interact with one another. In biology, this can take many forms, from a cell (whose organelles interact with one another) to an entire ecosystems (where individual orgnaisms interact with one another). Often, it is difficult to perturb these real-life systems, so this is where creating a model can be useful. Models of ecosystems can predict how species respond to changes in their environment, while models of systems within the body can predict how a person may react to a given medical drug.</p>
+	      <p>Biological systems can be represented in a variety of ways. Some can be modelled with a system of differential equations; this is commonly used when trying to model ecological systems. Systems can also be modelled as a mathematical graph, with nodes representing the items in the system (for example, the organelles in a cell) and edges between nodes representing how those items interact (for example, what and how much of a certain thing is passed between the organelles).</p>
+	      <h4>Reading List</h4>
+	      <p>Shaked, I., Oberhardt, M. A., Atias, N., Sharan, R., & Ruppin, E. (2016). Metabolic Network Prediction of Drug Side Effects. <i>Cell Systems</i>, 2(3), 209–213. https://doi.org/10.1016/j.cels.2016.03.001</p>
+	      <p><blockquote>This paper investigates the use of metabolic networks in predicting what side effects a given drug will produce. The authors used publically available data from <a href="http://sideeffects.embl.de/">SIDER</a> and <a href="https://www.drugbank.ca/">DrugBank</a> to create Support Vector Machines that predict side effects.</blockquote></p>
+	    </div>
+
+	    <div id="topics-med" class="tab-pane fade">
+	      <h3>Clinical Medicine</h3>
+	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	    </div>
+
+	    <div id="topics-htda" class="tab-pane fade">
+	      <h3>High-Throughput Data Analysis</h3>
+	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	    </div>
+
+	    <div id="topics-img" class="tab-pane fade">
+	    	<h3>Image Processing</h3>
+	    	<p>Words words words</p>
+	    </div>
+
+	    <div id="topics-phy" class="tab-pane fade">
+	    	<h3>Phylogenetics</h3>
+    		<p> la la la la </p>
+	    </div>
+
+	    <!--- TECHNIQUES -->
 	    <div id="techniques" class="tab-pane fade">
 	      <h3>Techniques</h3>
 	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
 	    </div>
+
+	    <!--- SOFTWARE -->
 	    <div id="software" class="tab-pane fade">
 	      <h3>Software</h3>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	    </div>
+
+	    <!--- COURSEWORK -->
 	    <div id="coursework" class="tab-pane fade">
 	      <h3>Coursework</h3>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	    </div>
+
+	    <!--- DATA -->
 	    <div id="datasrc" class="tab-pane fade">
 	      <h3>Data Sources</h3>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	    </div>
+
+	    <!--- COMMUNITIES -->
 	    <div id="communities" class="tab-pane fade">
 	      <h3>Communities</h3>
 	      <h4><a href="https://www.biostars.org/">BioStars</a></h4>
@@ -66,6 +111,8 @@
 	      <h4><a href="https://bioinformatics.stackexchange.com/">Bioinformatics Stack Exchange</a></h4>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	    </div>
+
+	    <!--- ABOUT -->
 	    <div id="about" class="tab-pane fade">
 	      <h3>About This Page</h3>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
