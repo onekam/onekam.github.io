@@ -17,6 +17,7 @@
 
 <ul class="nav nav-pills">
     <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#dict">CompBio Dictionary</a></li>
     <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
     <span class="caret"></span></a>
@@ -27,10 +28,17 @@
       <li><a data-toggle="tab" href="#topics-img">Image Processing</a></li> 
       <li><a data-toggle="tab" href="#topics-phy">Phylogenetics</a></li> 
     </ul>
-  </li>
+  	</li>
     <li><a data-toggle="tab" href="#techniques">Techniques</a></li>
     <li><a data-toggle="tab" href="#software">Software</a></li>
-    <li><a data-toggle="tab" href="#coursework">Coursework</a></li>
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Coursework
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a data-toggle="tab" href="#crs-prereqs">Prerequisites</a></li> 
+      <li><a data-toggle="tab" href="#crs-new">Field Introductions</a></li> 
+    </ul>
+  	</li>
     <li><a data-toggle="tab" href="#datasrc">Data Sources</a></li>
     <li><a data-toggle="tab" href="#communities">Online Communities</a></li>
     <li><a data-toggle="tab" href="#about">About This Page</a></li>
@@ -43,6 +51,13 @@
 	    <div id="home" class="tab-pane fade in active">
 	      <h3>What is Computational Biology?</h3>
 	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    </div>
+
+	    <!--- DICTIONARY -->
+	    <div id="dict" class="tab-pane fade">
+    		<h3>Computational Biology Dictionary</h3>
+    		<p>A list of terms and definitions. Will include specifically comp bio (RNA-Seq, proteomics, etc.) as well as some computer science (machine learning, different prog languages), biology, math, etc.</p>
+    		<p>Also possibly: <a href="https://gojs.net/latest/samples/mindMap.html">a concept map</a>. That would be cool but that is kind of a stretch goal.</p>
 	    </div>
 
 	    <!--- TOPICS -->
@@ -89,10 +104,71 @@
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	    </div>
 
-	    <!--- COURSEWORK -->
-	    <div id="coursework" class="tab-pane fade">
-	      <h3>Coursework</h3>
-	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	    <!--- COURSEWORK: PREREQS -->
+	    <div id="crs-prereqs" class="tab-pane fade">
+	      <h3>Prerequisites</h3>
+	      <p>There exists <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003662">a really extensive guide</a> to courses to a Computational Biology curriculum. This guide by David Searls provides a list of pretty much any course one could think of relevant to a future in computational biology, from highly relevant courses in molecular biology to philosophy. The guide includes links to relevant MOOC's and other online resources, as well as lists some (usually low cost) books that could be useful in self-teaching the topics as well.</p>
+	      <p>However, this guide can seem a bit daunting. On this page, I'll provide my own analysis of what I, after some research into the topic, deem as essential to the computational biology experience.</p>
+	      <p>After perusing the coursework at several institutions offering BS degrees in bioinformatics/computational biology, these are the courses that appear frequently on lists of required or elective courses:</p>
+	      
+	      <h4>Mathematics</h4>
+	      <ul>
+	      	<li> Calculus </li>
+	      	<li> Discrete Mathematics </li>
+	      	<li> Linear Algebra </li>
+	      </ul>
+
+	      <h4>Computer Science</h4>
+	      <ul>
+	      	<li> Introduction to Computer Science </li>
+	      	<li> Data Structures and Algorithms </li>
+	      	<li> Database Programming </li>
+	      	<li> Artificial Intelligence / Machine Learning </li>
+	      </ul>
+
+	      <h4>Biology</h4>
+	      <ul>
+	      	<li> Introduction to Biology </li>
+	      	<li> Genetics </li>
+	      	<li> Molecular and Cell Biology </li>
+	   		<li> Moleclar Genetics </li>
+	      </ul>
+
+	      <h4>Chemistry</h4>
+	      <ul>
+	      	<li> Introduction to Chemistry </li>
+	      	<li> Organic Chemistry </li>
+	      	<li> Biochemistry </li>
+	      </ul>
+	    </div>
+
+	    <!-- COURSEWORK: NEW -->
+	    <div id="crs-new" class="tab-pane fade">
+	    	<h3>Online Courses and Workshops in Bioinformatics</h3>
+
+	    	<h4>Bioinformatics.ca</h4>
+	    	<p>Bioinformatics.ca has a yearly conference where field experts educate other bioinformaticians on useful tools to conduct bioinformatics work with. The best part? Most of the workshop materials are available online! Click <a href="https://bioinformatics-cbw.github.io/workshops/workshops-2017/">here</a> to view the 2017 workshops, which include a variety of fields including infectious disease genomic epidemiology, pathway and network analysis, and more.</p>
+
+	    	<h4>Harvard Online Learning</h4>
+	    	<p>The Harvard Online Learning portal has many relevant courses to bioinformatics</p>
+
+	    	<ul>
+	    		<li>
+	    			<a href="http://online-learning.harvard.edu/course/data-analysis-life-sciences-5-introduction-bioconductor-annotation-and-analysis-genomes-and?category%5B%5D=9&sort_by=date_added&cost%5B%5D=free">Introduction to Bioconductor</a>
+	    		</li>
+	    		<li>
+	    			<a href="http://online-learning.harvard.edu/course/data-analysis-life-sciences-6-high-performance-computing-reproducible-genomics?category%5B%5D=9&sort_by=date_added&cost%5B%5D=free">High Performance Computing for Reproducible Genomics</a>
+	    		</li>
+	    		<li>
+	    			<a href="http://online-learning.harvard.edu/course/data-analysis-life-sciences-3-statistical-inference-and-modeling-high-throughput-experiments">Statistical Inference and Modeling for High-throughput Experiments</a>
+	    		</li>
+	    		<li>
+	    			<a href="http://online-learning.harvard.edu/course/data-analysis-life-sciences-7-case-studies-functional-genomics?category%5B%5D=9&sort_by=date_added&cost%5B%5D=free">Case Studies in Functional Genomics</a>
+	    		</li>
+	    	</ul>
+
+	    	<h4>The European Bioinformatics Institute Online Training</h4>
+	    	<p>The EBI has <a href="https://www.ebi.ac.uk/training/online/course-list?page=1">a large collection of training modules</a> available for free online. Many are brief (< 1 hr) introductions to certain topics or technologies. Coursework covers material such as computational drug discovery, metabolomics, phylogenetics, and more.</p>
 	    </div>
 
 	    <!--- DATA -->
