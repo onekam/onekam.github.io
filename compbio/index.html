@@ -34,8 +34,6 @@
       <li><a data-toggle="tab" href="#topics-seq">Sequencing Data</a></li>
     </ul>
   	</li>
-    <li><a data-toggle="tab" href="#techniques">Techniques</a></li>
-    <li><a data-toggle="tab" href="#software">Software</a></li>
     <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Coursework
     <span class="caret"></span></a>
@@ -44,8 +42,9 @@
       <li><a data-toggle="tab" href="#crs-new">Courses & Workshops</a></li> 
     </ul>
   	</li>
+  	<li><a data-toggle="tab" href="#software">Software</a></li>
     <li><a data-toggle="tab" href="#datasrc">Data Sources</a></li>
-    <li><a data-toggle="tab" href="#communities">Online Communities</a></li>
+    <li><a data-toggle="tab" href="#other">Other Resources</a></li>
     <li><a data-toggle="tab" href="#about">About This Page</a></li>
   </ul>
   <br>
@@ -54,8 +53,17 @@
 	<div class="tab-content">
 		<!--- HOME -->
 	    <div id="home" class="tab-pane fade in active">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/home_banner.jpg" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="http://www.mpibpc.mpg.de/soeding">Max Planck Institute for Biophysical Chemistry</a></figcaption>
+	  		</figure>
 	      <h3>What is Computational Biology?</h3>
-	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <p>Computational Biology is exactly what it sounds like: a field where computational methods are applied to solve problems in biology. Computational Biologists seek to solve biological problems that usually cannot be solved (at least not efficiently) by human hands alone, yet require more biological knowledge than a pure computer scientist would know or want to learn. </p>
+	      <p>Whereas biologists may perform experiments <i>in vivo</i> or <i>in situ</i>, a computational biologist does most of their work <i>in silico</i>, referring to the silicon of a computer chip. As can be seen by the various Research pages on this website, this can entail many different things, from sequencing and performing data analytics on a genome to modelling systems within the body.</p>
+	      <p>One may also hear of the term <i>bioinformatics</i> when reading about computational biology. While the NIH, among other organizations, have sought to provide disjoint definitions of computational biology vs. bioinformatics, these definitions are not widely adopted, and the line between what makes someone a "computational biologist" versus a "bioinformatician" is murky. Thus, it would be reasonable to consider the two essentially the same field.</p>
+
+	      <h3>References</h3>
+	      <p>"NIH working definition of bioinformatics and computational biology". Biomedical Information Science and Technology Initiative. 17 July 2000. Archived from the original on 5 September 2012. Retrieved 10 March 2018.</p>
 	    </div>
 
 	    <!--- DICTIONARY -->
@@ -69,25 +77,37 @@
 
 	    <!--- Cellular and Systems Modelling -->
 	    <div id="topics-csm" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_csm_cycle.jpg" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="https://www.systemsbiology.org/about/what-is-systems-biology/">Institute for Systems Biology</a></figcaption>
+	  		</figure>
 	      <h3>Cellular and Systems Modelling</h3>
 	      <h4>What is Cellular and Systems Modeling?</h4>
 	      <p>A system is a collection of items that interact with one another. In biology, this can take many forms, from a cell (whose organelles interact with one another) to an entire ecosystems (where individual orgnaisms interact with one another). Often, it is difficult to perturb these real-life systems, so this is where creating a model can be useful. Models of ecosystems can predict how species respond to changes in their environment, while models of systems within the body can predict how a person may react to a given medical drug.</p>
 	      <p>Biological systems can be represented in a variety of ways. Some can be modelled with a system of differential equations; this is commonly used when trying to model ecological systems. Systems can also be modelled as a mathematical graph, with nodes representing the items in the system (for example, the organelles in a cell) and edges between nodes representing how those items interact (for example, what and how much of a certain thing is passed between the organelles).</p>
-	      <h4>Reading List</h4>
+	      <h4>Recent Research</h4>
 	      <p>Shaked, I., Oberhardt, M. A., Atias, N., Sharan, R., & Ruppin, E. (2016). Metabolic Network Prediction of Drug Side Effects. <i>Cell Systems</i>, 2(3), 209–213. https://doi.org/10.1016/j.cels.2016.03.001</p>
 	      <p><blockquote>This paper investigates the use of metabolic networks in predicting what side effects a given drug will produce. The authors used publically available data from <a href="http://sideeffects.embl.de/">SIDER</a> and <a href="https://www.drugbank.ca/">DrugBank</a> to create Support Vector Machines that predict side effects.</blockquote></p>
-	      <h4>Page Sources</h4>
+	      <h4>References</h4>
 	      <p>Mar, Jesica. (2011). Introduction to Systems Biology [Powerpoint Slides]. Retreived from http://bioinformatics.org.au/resources/ws11/presentations/Jess.pdf.</p>
 	    </div>
 
 	    <!-- Clinical Medicine -->
 	    <div id="topics-med" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_med_heartbeat.jpg" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="http://www.mtu.edu/medical-informatics/">Michigan Tech</a></figcaption>
+	  		</figure>
 	      <h3>Clinical Medicine</h3>
 	      <p>With the rise of machine learning methods such as deep learning, many researchers with interest in human health and wellness have turned to computation. Applications to clinical medicine are most often geared toward this idea of personalized medicine: creating a custom means of treatment for an individual based on their personal profile.</p>
 	    </div>
 
 	    <!-- Information Retrieval -->
 	    <div id="topics-info" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_info_machine.jpg" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="http://www.copyrightuser.org/understand/exceptions/text-data-mining/">CopyrightUser.Org</a></figcaption>
+	  		</figure>
 	    	<h3>Information Retrieval</h3>
 	    	<p>Information Retrieval is an interesting area of research in data mining and is applicable in many fields, from English literature to chemistry, and of course including biology.</p>
 	    	<p>Biology has a wealth of information available, from protein databases to human medical records.</p>
@@ -95,12 +115,20 @@
 
 	    <!-- Image Processing -->
 	    <div id="topics-img" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_img_cells.png" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="https://openi.nlm.nih.gov/detailedresult.php?img=PMC3244889_1556-276X-3-321-6&req=4">Open-i at the NIH</a></figcaption>
+	  		</figure>
 	    	<h3>Image Processing</h3>
 	    	<p>The stereotypical image of a biologist is often portrayed as a person in a white coat staring into a microscope. Many scientists spend hours doing this, manually classifying slides. Image processing seeks to reduce and eventually perhaps eliminate this aspect of biology, instead turning to computational methods to manually analyze visual data, including cell slides.</p>
 	    </div>
 
 	    <!-- Phylogenetics -->
 	    <div id="topics-phy" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_phy_tree.jpg" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="http://anthropologyiselemental.ua.edu/3-comparative-osteology.html">University of Alabama</a></figcaption>
+	  		</figure>
 	    	<h3>Phylogenetics</h3>
     		<p> Phylogeny conveys evolutionary relationships between two things. A phylogenetic tree often displays relationships between organisms, showing which species evolved from one another, helping to decipher common ancestors and genetic lineage. </p>
     		<!-- TODO: find a paper that does this for like species -->
@@ -110,20 +138,12 @@
 
 	    <!-- Sequencing Data -->
 	    <div id="topics-seq" class="tab-pane fade">
+	    	<figure class="figure" style="float: right">
+	      		<img src="images/topic_seq_genome.png" class="figure-img img-fluid rounded" width="400px"/>
+	      		<figcaption class="figure-caption">Source: <a href="https://www.technologynetworks.com/genomics/news/harnessing-the-human-genome-286123">Technology Standards</a></figcaption>
+	  		</figure>
 	      <h3>Sequencing Data</h3>
-	      <p>As sequencing technology becomes less expensive and thus more accessible, biologists find themselves with a wealth of information. Computational biologists who work with sequencing data</p>
-	    </div>
-
-	    <!--- TECHNIQUES -->
-	    <div id="techniques" class="tab-pane fade">
-	      <h3>Techniques</h3>
-	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-	    </div>
-
-	    <!--- SOFTWARE -->
-	    <div id="software" class="tab-pane fade">
-	      <h3>Software</h3>
-	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	      <p>As sequencing technology becomes less expensive and thus more accessible, biologists find themselves with a wealth of information. Computational biologists who work with sequencing data can find themselves working on better algorithms for assembling genome data, finding transcription errors, and more.</p>
 	    </div>
 
 	    <!--- COURSEWORK: PREREQS -->
@@ -131,7 +151,7 @@
 	      <h3>Prerequisites</h3>
 	      <p>Bioinformatics is an interdisciplinary field, drawing people whose sole education is in biology, computer science, math, chemistry, and more. Thus, it is not uncommon for those interested in studying it to have deficiencies in one or more of the relevant areas, and to improve on these deficiencies while tacking their research projects.</p>
 	      <p>However, for those who would like to receive a more formal introduction to the fields in which they are lacking, there exists <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003662">a really extensive guide</a> to courses to a Computational Biology curriculum. This guide by David Searls provides a list of pretty much any course one could think of relevant to a future in computational biology, from highly relevant courses in molecular biology to philosophy. The guide includes links to relevant MOOC's and other online resources, as well as lists some (usually low cost) books that could be useful in self-teaching the topics as well.</p>
-	      <p>However, this guide can seem a bit daunting. On this page, I'll provide my own analysis of what I, after some research into the topic, deem as essential to the computational biology experience.</p>
+	      <p>The above guide can seem a bit daunting. On this page, I'll provide my own analysis of what I, after some research into the topic, deem as essential to the computational biology experience.</p>
 	      <p>After perusing the coursework at several institutions offering BS degrees in bioinformatics/computational biology, these are the courses that appear frequently on lists of required or elective courses:</p>
 	      
 	      <h4>Mathematics</h4>
@@ -194,6 +214,12 @@
 	    	<p>The EBI has <a href="https://www.ebi.ac.uk/training/online/course-list?page=1">a large collection of training modules</a> available for free online. Many are brief (< 1 hr) introductions to certain topics or technologies. Coursework covers material such as computational drug discovery, metabolomics, phylogenetics, and more.</p>
 	    </div>
 
+	    <!--- SOFTWARE -->
+	    <div id="software" class="tab-pane fade">
+	      <h3>Software</h3>
+	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+	    </div>
+
 	    <!--- DATA -->
 	    <div id="datasrc" class="tab-pane fade">
 	      <h3>Data Sources</h3>
@@ -201,8 +227,8 @@
 	  </div>
 
 	    <!--- COMMUNITIES -->
-	    <div id="communities" class="tab-pane fade">
-	      <h3>Communities</h3>
+	    <div id="other" class="tab-pane fade">
+	      <h3>Online Communities</h3>
 	      <h4><a href="https://www.biostars.org/">BioStars</a></h4>
 	      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 	      <h4><a href="https://www.reddit.com/r/bioinformatics/">R/Bioinformatics</a></h4>
